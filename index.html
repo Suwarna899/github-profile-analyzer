@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Profile Analyzer</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #38bdf8;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      margin-top: 5px;
+    }
+
+    .input-box {
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 12px;
+      width: 260px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 12px 15px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    .card {
+      margin: 30px auto;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 420px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    img {
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 3px solid #38bdf8;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 6px 0;
+      color: #e2e8f0;
+    }
+
+    .muted {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    canvas {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>GitHub Profile Analyzer</h2>
+  <p class="subtitle">Live Developer Insights Dashboard</p>
+
+  <div class="input-box">
+    <input id="username" placeholder="Enter GitHub username" />
+    <button onclick="getUser()">Search</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
